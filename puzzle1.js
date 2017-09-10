@@ -5,7 +5,7 @@ P1.problemNumber = [];
 P1.problemLetter =[];
 P1.solution = "";
 
-P1.Letters = ['65','66','67','68','69','70']; // A-Z
+P1.Letters = ['65','66','67','68','69','70']; // A-F
 P1.Numbers = ['48','49','50','51','52','53','54','55','56','57']; // 0-9
 						
 P1.Init = function() {
