@@ -29,7 +29,7 @@ T.Render = function() {
   if (this.isBlink)
   {
     ctx.fillStyle = 'rgb(1, 255, 1)';
-	ctx.fillRect(52+this.textWidth, 415, 12, 20);
+    ctx.fillRect(52+this.textWidth, 415, 12, 20);
   }
 }
 
