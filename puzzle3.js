@@ -17,27 +17,27 @@ P3.Init = function() {
   {
     P3.getChar = P3.solution.slice(n,n+1);
 	
-	// sequence
-	if (P3.getChar > 0 && P3.getChar < 9)
-	{
-	  num = parseInt(P3.getChar)-1;
-	  num2 = num + parseInt(P3.getChar);
+    // sequence
+    if (P3.getChar > 0 && P3.getChar < 9)
+    {
+      num = parseInt(P3.getChar)-1;
+      num2 = num + parseInt(P3.getChar);
       P3.sequence += num+''+num2;
-	}
+    }
 	
-	if (P3.getChar == 0)
-	{
-	  num = parseInt(P3.getChar)+1;
-	  num2 = num + parseInt(P3.getChar);
+    if (P3.getChar == 0)
+    {
+      num = parseInt(P3.getChar)+1;
+      num2 = num + parseInt(P3.getChar);
       P3.sequence += num+''+num2;
-	}
+    }
 	
-	if (P3.getChar == 9)
-	{
-	  num = parseInt(P3.getChar)+1;
-	  num2 = num + parseInt(P3.getChar);
+    if (P3.getChar == 9)
+    {
+      num = parseInt(P3.getChar)+1;
+      num2 = num + parseInt(P3.getChar);
       P3.sequence += num+''+num2;
-	}
+    }
   }
 }
 
@@ -57,9 +57,9 @@ P3.Render = function() {
 P3.Update = function() {
   if (T.GetKeyCode() == 13)
   {
-	P3.ShowMsg("HINT","Hexadecimal to decimal - discover the sequence\nType hextodec to convert");
-	P3.ShowMsg("HEXTODEC",P3.sequence);
-	P3.ShowMsg("I GIVE UP",P3.solution);
+    P3.ShowMsg("HINT","Hexadecimal to decimal - discover the sequence\nType hextodec to convert");
+    P3.ShowMsg("HEXTODEC",P3.sequence);
+    P3.ShowMsg("I GIVE UP",P3.solution);
   }
 }
 
