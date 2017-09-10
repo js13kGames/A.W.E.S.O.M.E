@@ -16,7 +16,7 @@ Timer.GetMillisecs = function(millisec) {
   if (Timer.GetSec() <= Date.now())
   {
     Timer.SetSec(Date.now()+millisec);
-	
-	return true;
+    
+    return true;
   }	
 }
