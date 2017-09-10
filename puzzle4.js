@@ -41,7 +41,7 @@ P4.Render = function() {
   }
   else
   {
-	ctx.drawImage(P4.skull, P4.posX, P4.posY);
+    ctx.drawImage(P4.skull, P4.posX, P4.posY);
   }
   
   ctx.font = '14px Arial';
@@ -54,19 +54,19 @@ P4.Update = function() {
   if (P4.sec <= Date.now())
   {
     P4.sec = Date.now()+500;
-	P4.showCookie = !P4.showCookie;
+    P4.showCookie = !P4.showCookie;
 	
-	P4.posX = 90+P4.GetRandom(330);
-	P4.posY = 120+P4.GetRandom(150);
+    P4.posX = 90+P4.GetRandom(330);
+    P4.posY = 120+P4.GetRandom(150);
   }
   
   if (T.GetKeyCode() == 13)
   {
-	P4.ShowMsg("HINT","Where can you find a cookie?");
-	P4.ShowMsg("COOKIE","Sorry! Not that simple!");
-	P4.ShowMsg("I GIVE UP","Type javascript:alert(document.cookie) in browser");
+    P4.ShowMsg("HINT","Where can you find a cookie?");
+    P4.ShowMsg("COOKIE","Sorry! Not that simple!");
+    P4.ShowMsg("I GIVE UP","Type javascript:alert(document.cookie) in browser");
 	
-	KB.ClearBuffer();
+    KB.ClearBuffer();
   }
 }
 
