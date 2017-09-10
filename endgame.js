@@ -30,7 +30,7 @@ EndGame.Render = function() {
     ctx.font = '36px Arial';
     ctx.fillStyle = 'rgb(255,0,0)';
     ctx.fillText("All is LOST!", (c.width/2)-100, 230);
-	ctx.fillText("JS13KGAMES 2017", (c.width/2)-170, 280);
+    ctx.fillText("JS13KGAMES 2017", (c.width/2)-170, 280);
   }
 }
 
@@ -38,7 +38,7 @@ EndGame.Update = function() {
   if ((EndGame.sec <= Date.now()) && (EndGame.n > 0))
   {
     EndGame.sec = Date.now()+1000;
-	if (EndGame.n > 0){EndGame.n--;}else{EndGame.n=0;};
+    if (EndGame.n > 0){EndGame.n--;}else{EndGame.n=0;};
   }
 }
 
